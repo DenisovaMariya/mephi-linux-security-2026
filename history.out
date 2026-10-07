@@ -1,0 +1,27 @@
+    1  sudo groupadd students
+    2  sudo useradd -m -u 1234 -g students user1
+    3  sudo passwd user1
+    4  sudo chage -M 90 user1
+    5  sudo find / -perm -4000 -fprintf ./mephi/suid.txt
+    6  sudo find / -perm -4000 -fprintf ./suid.txt
+    7  sudo find / -perm -4000 -fprintf /home/make/suid.txt
+    8  sudo find / -perm -4000 -fprintf > /home/make/suid.txt
+    9  sudo find / -perm -4000 -fprintf /home/make/suid.txt '%#m %u %p\n'
+   10  su user1
+   11  sudo cp /usr/bin/cat /home/user1/cat_user1
+   12  sudo chown root:root /home/user1/cat_user1
+   13  sudo chmod 4755 /home/user1/cat_user1
+   14  ls -l /home/user1/cat_user1
+   15  sudo ls -l /home/user1/cat_user1
+   16  su user1
+   17  stat /home/user1 > ~/stat.out
+   18  cat ~/stat.out 
+   19  su user1
+   20  sudo cp /usr/bin/chown /home/user1/chown_user1
+   21  sudo setcap cap_chown+ep /home/user1/chown_user1
+   22  getcap /home/user1/chown_user1
+   23  sudo getcap /home/user1/chown_user1
+   24  su user1
+   25  sudo nano /etc/sudoers.d/user1_time
+   26  su user1
+   27  history > ~/history.out

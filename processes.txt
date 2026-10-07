@@ -1,0 +1,4 @@
+    PID  RUID  EUID RUSER    EUSER    COMMAND
+   3193  1000     0 make     root     fusermount3
+   5435  1000     0 make     root     su
+   5500  1234     0 user1    root     passwd

@@ -1,0 +1,26 @@
+    1  passwd
+    2  cat /etc/passwd
+    3  cat /etc/shadow
+    4  which cat
+    5  sudo cp /usr/bin/cat /home/user1/cat_user1
+    6  exit
+    7  /home/user1/cat_user1 /etc/shadow
+    8  exit
+    9  touch test4.txt
+   10  cd /home/user1/
+   11  touch test4.txt
+   12  exit
+   13  /home/user1/chown_user1 root test4.txt
+   14  /home/user1/chown_user1 root /home/user1/test4.txt
+   15  cd /home/user1/
+   16  ls -l
+   17  stat /home/user1 > ~/stat.out
+   18  cat ./stat.out 
+   19  exit
+   20  date -s "2026-10-08"
+   21  sudo date -s "2026-10-08"
+   22  date
+   23  sudo date -s "2026-10-08 23:00:00"
+   24  date
+   25  sudo date -s "2026-10-07 23:39:00"
+   26  history > ~/history_user1.out
